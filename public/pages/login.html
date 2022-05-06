@@ -41,11 +41,11 @@
     </div>
     <br>
     <div class="form">
-      <form>
-        <input type="text" placeholder="Username" class="text" id="username" required><br>
-        <input type="password" placeholder="Password" class="password"><br>
+      <form action="/login" method="post">
+        <input type="text" placeholder="Username" class="text" name="username" required><br>
+        <input type="password" placeholder="Password" class="password" name="password" required><br>
         <br>
-        <a href="#" class="btn-login" id="do-login">Login</a>
+        <input type="submit" href="#" class="btn-login" id="do-login" value="Login">
         <a href="#" class="forgot">Forgot?</a>
       </form>
     </div>

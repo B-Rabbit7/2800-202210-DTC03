@@ -1,5 +1,8 @@
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser');
+app.use(express.json()); // Used to parse JSON bodies
+app.use(express.urlencoded({ extended: true })); //Parse URL-encoded bodies
 
 var session = require('express-session')
 
@@ -18,21 +21,24 @@ app.get('/', function (req, res) {
     if(req.session.authenticated)
         res.send(`Hi ${req.session.user}`)
     else {
-        res.redirect('/login')
+        res.sendFile(__dirname + "/public/pages/login.html")
     }
 })
 
-app.get('/login/', function (req, res, next) {
-    res.send("Please provide the credentials through the URL")
+app.get('/login', function (req, res, next) {
+    res.sendFile(__dirname + "/public/pages/login.html")
 })
 
-app.get('/login/:user/:pass', function (req, res, next) {
-    if(users[req.params.user] == req.params.pass) {
+app.post('/login', function (req, res, next) {
+    let username = req.body.username;
+	let password = req.body.password;
+    if(users[username] == password) {
         req.session.authenticated = true
-        req.session.user = req.params.user
-        res.send("Successful Login!")
+        req.session.user = username
+        res.sendFile(__dirname + "/public/index.html")
     }else{
         req.session.authenticated = false
-        res.send("Failed login")
     }
 })
+
+app.use(express.static(__dirname + '/public'));
