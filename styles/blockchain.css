@@ -49,7 +49,7 @@ p.midigateEffects{
     margin: 0%;
 }
 div.bottomParagraph{
-    height: 300px;
+    height: 350px;
 }
 div.blockchainbgicon{
     position:absolute;right:0;
@@ -68,6 +68,17 @@ div.blockchainbgicon2{
     color: #2bd9fe;
     margin-top: 600px;
     margin-left: -100px;
+    animation: spin 5s 2;
+}
+div.testing{
+    position: relative;
+    animation: spin 5s 2 ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
 .blockchainicon2{
     position: relative;
@@ -86,4 +97,6 @@ div.blockchainbgicon2{
     width: 100%;
     height: 100%;
 }
+
+/* testing */
 
