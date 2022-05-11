@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10%;
+}
+
+#color {
+    color: white;
+    padding: 10px;
+}
+
+#a {
+    font-size: x-large;
+    text-align: center;
+
+}
+
+#b {
+    font-size: small;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.class {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.class2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+}

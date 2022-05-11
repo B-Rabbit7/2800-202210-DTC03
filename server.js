@@ -36,7 +36,7 @@ app.post('/login', function (req, res, next) {
     if(users[username] == password) {
         req.session.authenticated = true
         req.session.user = username
-        res.sendFile(__dirname + "/public/index.html")
+        res.sendFile(__dirname + "/public/pages/main.html")
     }else{
         req.session.authenticated = false
     }
