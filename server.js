@@ -13,7 +13,7 @@ users = {
     "user2": "pass2",
 }
 
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, function (err) {
     if (err) console.log(err)
 })
