@@ -1,6 +1,21 @@
-var btnLogin = document.getElementById('do-login');
-var idLogin = document.getElementById('login');
-var username = document.getElementById('username');
-btnLogin.onclick = function(){
-  idLogin.innerHTML = '<p>We\'re happy to see you again, </p><h1>' +username.value+ '</h1>';
-}
+$("#do-login").click(function() {
+  $.ajax({
+    type: "get",
+    url: `http://localhost:5000/login/${document.getElementById("user").value}/${document.getElementById("pass").value}`,
+    success: function (x){
+      console.log(x);
+      location.reload();
+    }
+  })
+})
+
+$("#do-create").click(function() {
+  $.ajax({
+    type: "put",
+    url: `http://localhost:5000/create/${document.getElementById("user").value}/${document.getElementById("pass").value}`,
+    success: function (x){
+      console.log(x);
+      location.reload();
+    }
+  })
+})
