@@ -1,19 +1,21 @@
-
 main {
     display: flex;
     flex-direction: column;
 }
-header{
+
+header {
     position: relative;
 }
-h3{
+
+h3 {
     display: flex;
     justify-content: center;
     padding-top: 30px;
     color: #FFFFFF;
     position: relative;
 }
-h6{
+
+h6 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -21,7 +23,7 @@ h6{
     margin-top: 8px;
 }
 
-p.defineBlockchain{
+p.defineBlockchain {
     position: relative;
     font-weight: lighter;
     padding: 10px 20px;
@@ -30,7 +32,8 @@ p.defineBlockchain{
     text-align: center;
     margin: 0%;
 }
-p.effectsBlockchain{
+
+p.effectsBlockchain {
     position: relative;
     font-weight: lighter;
     padding: 10px 20px;
@@ -39,7 +42,8 @@ p.effectsBlockchain{
     text-align: center;
     margin: 0%;
 }
-p.midigateEffects{
+
+p.midigateEffects {
     position: relative;
     font-weight: lighter;
     padding: 10px 20px;
@@ -48,42 +52,200 @@ p.midigateEffects{
     text-align: center;
     margin: 0%;
 }
-div.bottomParagraph{
-    height: 300px;
+
+div.bottomParagraph {
+    height: 350px;
 }
-div.blockchainbgicon{
-    position:absolute;right:0;
+
+div.blockchainbgicon {
+    position: absolute;
+    right: 0;
     overflow: hidden;
     width: 300px;
     height: 300px;
     opacity: 30%;
     color: #2bd9fe;
 }
-div.blockchainbgicon2{
+
+div.blockchainbgicon2 {
     display: inline;
-    position:absolute;
+    position: absolute;
     width: 300px;
     height: 300px;
     opacity: 30%;
     color: #2bd9fe;
     margin-top: 600px;
     margin-left: -100px;
+    animation: spin 5s 2;
 }
-.blockchainicon2{
+
+div.testing {
     position: relative;
-    color:#2bd9fe;
+    animation: spin 5s 2;
+    animation-iteration-count: 10;
+}
+
+.definitionButton {
+    background-color: #DBA60E;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border-color: #DBA60E;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.pdefinitionAnimation {
+    position: relative;
+    font-weight: lighter;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-size: smaller;
+    text-align: center;
+    margin: 0%;
+    animation: fade 2s linear forwards;
+}
+
+
+.iconify.blockchainicon2 {
+    position: relative;
+    color: #2bd9fe;
     width: 100%;
     height: 50px;
 
 }
-.blockchainicon3{
+
+.blockchainicon3 {
     position: relative;
-    color:#2bd9fe;
+    color: #2bd9fe;
     width: 100%;
     height: 100px;
 }
-#blockchainbackground{
+
+#blockchainbackground {
     width: 100%;
     height: 100%;
 }
+
+#defbutton {
+    display: flex;
+    justify-content: center;
+}
+
+/* animations */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.button-container-1 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6vh;
+  overflow: hidden;
+  border: 1px solid;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+}
+.button-container-1 button {
+  width: 101%;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: #000;
+  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+  -webkit-mask-size: 2300% 100%;
+  mask-size: 2300% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-animation: ani2 0.7s steps(22) forwards;
+  animation: ani2 0.7s steps(22) forwards;
+}
+.button-container-1 button:hover {
+  -webkit-animation: ani 0.7s steps(22) forwards;
+  animation: ani 0.7s steps(22) forwards;
+}
+
+
+.mas {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  width: 101%;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 11px;
+  margin-top: 17px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0;
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+}
+
+a {
+  color: #00ff95;
+}
+
+
+
 
