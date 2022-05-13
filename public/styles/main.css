@@ -6,6 +6,9 @@ main {
     height: 100%;
     padding-bottom: 10%;
 }
+nav {
+    color: white;
+}
 
 #color {
     color: white;
