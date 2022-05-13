@@ -20,7 +20,7 @@ app.listen(port, function (err) {
 
 app.get('/', function (req, res) {
     if(req.session.authenticated)
-        res.send(`Hi ${req.session.user}`)
+        res.sendFile(__dirname + "/public/index.html")
     else {
         res.sendFile(__dirname + "/public/pages/login.html")
     }
