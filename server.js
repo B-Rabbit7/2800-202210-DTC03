@@ -3,6 +3,7 @@ const app = express()
 const bodyParser = require('body-parser');
 app.use(express.json()); // Used to parse JSON bodies
 app.use(express.urlencoded({ extended: true })); //Parse URL-encoded bodies
+const mongoose = require('mongoose');
 
 var session = require('express-session')
 
@@ -18,28 +19,62 @@ app.listen(port, function (err) {
     if (err) console.log(err)
 })
 
+mongoose.connect("mongodb+srv://terra:studium2022@cluster0.sikkg.mongodb.net/terra?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true });
+const accountSchema = new mongoose.Schema({
+    user: String,
+    pass: String
+});
+const accountModel = mongoose.model("accounts", accountSchema);
+
 app.get('/', function (req, res) {
     if(req.session.authenticated)
-        res.send(`Hi ${req.session.user}`)
+        res.sendFile(__dirname + "/public/index.html")
     else {
         res.sendFile(__dirname + "/public/pages/login.html")
     }
 })
 
-app.get('/login', function (req, res, next) {
+app.get('/login', function (req, res) {
     res.sendFile(__dirname + "/public/pages/login.html")
 })
 
-app.post('/login', function (req, res, next) {
-    let username = req.body.username;
-	let password = req.body.password;
-    if(users[username] == password) {
-        req.session.authenticated = true
-        req.session.user = username
-        res.sendFile(__dirname + "/public/index.html")
-    }else{
-        req.session.authenticated = false
-    }
+app.get('/login/:user/:pass', function (req, res) {
+    let username = req.params.user;
+	let password = req.params.pass;
+    accountModel.findOne({user: username, pass: password}, function (err, data) {
+        if (err) {
+            console.log("Error " + err);
+        } else {
+            console.log("Data " + data);
+        }
+        if (data) {
+            req.session.authenticated = true;
+        }
+        res.send(data);
+    });
+})
+
+app.put('/create/:user/:pass', function (req, res) {
+    let username = req.params.user;
+	let password = req.params.pass;
+    console.log(username, password)
+    accountModel.create({
+        user: username,
+        pass: password
+    }, function (err, data) {
+        if (err) {
+            console.log("Error " + err);
+        } else {
+            console.log("Data " + data);
+        }
+        res.send(data);
+    });
+})
+
+app.get('/logout', function (req, res) {
+    req.session.authenticated = false;
+    res.send("Logout succeeded");
 })
 
 app.use(express.static(__dirname + '/public'));

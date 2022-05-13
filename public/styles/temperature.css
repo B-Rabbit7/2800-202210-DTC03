@@ -1,0 +1,23 @@
+h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    color: #FFFFFF;
+    position: relative;
+}
+h6{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+p{
+    position: relative;
+    font-weight: lighter;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-size: smaller;
+    text-align: center;
+    margin: 0%;
+}
