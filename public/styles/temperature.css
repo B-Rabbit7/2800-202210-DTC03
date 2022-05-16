@@ -21,3 +21,20 @@ p{
     text-align: center;
     margin: 0%;
 }
+ul{
+    position: relative;
+    font-weight: lighter;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-size: smaller;
+    text-align: center;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+.iconify{
+    position: relative;
+    color:#2bd9fe;
+    width: 100%;
+    height: 50px;
+
+}
