@@ -4,7 +4,7 @@ $("#do-login").click(function() {
     url: `http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com/login/${document.getElementById("user").value}/${document.getElementById("pass").value}`,
     success: function (data){
       console.log(data);
-      if (data != null) {
+      if (data) {
         window.location.href = 'http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com';
       } else {
         $("#login").append(`<br><div class="alertfailure">
