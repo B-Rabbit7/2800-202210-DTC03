@@ -2,6 +2,9 @@ nav {
   background-color: #3A0CA3;
 }
 
+.navbar-brand{
+  margin-bottom: 10px;
+}
 .navbar {
   background-color: #3A0CA3;
   overflow: hidden;
@@ -75,8 +78,9 @@ body {
 #header {
   display: flex;
   height: 73.075px;
-  align-content: center;
   justify-content: space-between;
+  align-items: center;
+
 }
 
 .overlay {
