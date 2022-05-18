@@ -54,7 +54,7 @@ p.midigateEffects {
 }
 
 div.bottomParagraph {
-    height: 350px;
+    height: 700px;
 }
 
 div.blockchainbgicon {
@@ -157,94 +157,225 @@ div.testing {
     }
 }
 
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* bar stuff */
+
+.table{
+    /* height: 100%; */
+    width: 380px;
+    background-color: #FFFFFF;
+    position: relative;
+    margin-top: 20px;
+    left: 2px;
+}
+/* .sent1{
+    color: #39cccc;
 }
 
-
-.button-container-1 {
-  position: relative;
-  width: 100px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6vh;
-  overflow: hidden;
-  border: 1px solid;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  transition: 0.5s;
-  letter-spacing: 1px;
-  border-radius: 8px;
+.paid1{
+    color: #7fdbff;
 }
-.button-container-1 button {
-  width: 101%;
-  height: 100%;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  background: #000;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  -webkit-mask-size: 2300% 100%;
-  mask-size: 2300% 100%;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(22) forwards;
-  animation: ani2 0.7s steps(22) forwards;
-}
-.button-container-1 button:hover {
-  -webkit-animation: ani 0.7s steps(22) forwards;
-  animation: ani 0.7s steps(22) forwards;
+.sent2{
+    color: #39cccc;
 }
 
-
-.mas {
-  position: absolute;
-  color: #000;
-  text-align: center;
-  width: 101%;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  position: absolute;
-  font-size: 11px;
-  margin-top: 17px;
-  overflow: hidden;
-  font-weight: bold;
+.paid2{
+    color: #7fdbff;
+}
+.sent3{
+    color: #39cccc;
 }
 
-@-webkit-keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
+.paid3{
+    color: #7fdbff;
 }
-@keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
+.sent4{
+    color: #39cccc;
 }
 
-a {
-  color: #00ff95;
+.paid4{
+    color: #7fdbff;
+} */
+
+#q-graph {
+    display: block;
+   /* fixes layout wonkiness in FF1.5 */
+    position: relative;
+    width: 370px;
+    height: 300px;
+    margin: 1.1em 0 0;
+    padding: 0;
+    background: transparent;
+    font-size: 11px;
 }
+#q-graph caption {
+    caption-side: top;
+    width: 390px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    top: -40px;
+    position: absolute;
+    /* z-index: 10; */
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-top: 10px;
+    text-align: center;
+}
+#q-graph tr, #q-graph th, #q-graph td {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    /* z-index: 2; */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+#q-graph td {
+    transition: all 0.3s ease;
+}
+#q-graph td:hover {
+    background-color: #4d4d4d;
+    opacity: 0.9;
+    color: white;
+}
+#q-graph thead tr {
+    left: 100%;
+    top: 50%;
+    bottom: auto;
+    margin: -2.5em 0 0 5em;
+}
+#q-graph thead th {
+    width: 7.5em;
+    height: auto;
+    padding: 0.5em 1em;
+}
+#q-graph thead th.sent1, #q-graph thead th.sent2,#q-graph thead th.sent3, #q-graph thead th.sent4  {
+    top: 0;
+    left: 0;
+    line-height: 2;
+}
+#q-graph thead th.paid1,#q-graph thead th.paid2,#q-graph thead th.paid3,#q-graph thead th.paid4 {
+    top: 2.75em;
+    line-height: 2;
+    left: 0;
+}
+#q-graph tbody tr {
+    height: 296px;
+    padding-top: 2px;
+    border-right: 1px dotted #c4c4c4;
+    color: #aaa;
+}
+#q-graph #q1 {
+    left: 100px;
+    background-color: #8eecf5;
+}
+#q-graph #q2 {
+    left: 170px;
+    background-color: #8eecf5;
+}
+#q-graph #q3 {
+    left: 240px;
+    background-color: #8eecf5;
+}
+#q-graph #q4 {
+    left: 310px;
+    border-right: none;
+    background-color: #8eecf5;
+}
+#q-graph tbody th {
+    bottom: -2em;
+    vertical-align: top;
+    font-weight: normal;
+    color: #333;
+}
+#q-graph .bar {
+    width: 30px;
+    border: 1px solid;
+    border-bottom: none;
+    color: #000;
+
+}
+#q-graph .bar p {
+    padding: 0;
+    opacity: 0.4;
+    width: 100%;
+    font-size: 90%; 
+    overflow-wrap: break-word;
+    font-weight: bolder;
+
+}
+#q-graph .sent1 {
+    left: 0px;
+    background-color: #ffbd00;
+    border-color: transparent;
+}
+#q-graph .sent2 {
+    left: 0px;
+    background-color: #f72585;
+    border-color: transparent;
+}
+#q-graph .sent3 {
+    left: 0px;
+    background-color: #38b000;
+    border-color: transparent;
+}
+#q-graph .sent4 {
+    left: 0px;
+    background-color: #4361ee;
+    border-color: transparent;
+}
+#q-graph .paid1 {
+    left: 29px;
+    background-color: #faa307;
+    border-color: transparent;
+}
+#q-graph .paid2 {
+    left: 29px;
+    background-color: #b5179e;
+    border-color: transparent;
+}
+#q-graph .paid3 {
+    left: 29px;
+    background-color: #008000;
+    border-color: transparent;
+}
+#q-graph .paid4 {
+    left: 29px;
+    background-color: #3f37c9;
+    border-color: transparent;
+}
+#ticks {
+    position: relative;
+    top: -310px;
+    left: 2px;
+    width: 390px;
+    height: 300px;
+    /* z-index: 1; */
+    color: #000;
+    font-size: 10px;
+    font-family: "fira-sans-2", Verdana, sans-serif;
+}
+#ticks .tick {
+    position: relative;
+    /* border-bottom: 1px dotted #c4c4c4; */
+    border-top: 1px dotted rgb(106, 105, 105);
+    width: 390px;
+    height: 25%;
+}
+#ticks .tick div {
+    position: relative;
+    
+    /* top: -0.8em; */
+    /* margin: 0 0 0 0.5em; */
+    color: #000;
+    height: 55px;
+    width: 95px;
+    background-color: #2bd9fe;
+    text-align: center;
+    font-family: "fira-sans-2", Verdana, sans-serif;
+    font-weight: bold;
+}
+
 
 
 

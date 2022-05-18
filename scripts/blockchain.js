@@ -1,5 +1,5 @@
 function showDefine(){
-    var divDefinition =  document.getElementById('defininitiondiv');
+    var divDefinition =  document.getElementById('definitiondiv');
     console.log(divDefinition)
     var pDefinition = document.getElementById('defineBlockchain')
     console.log(pDefinition)
@@ -19,13 +19,11 @@ function showDefine(){
     open = !open;
 
 }
-// function hideDefine(){
-//     $(".pdefinitionAnimation").hide();
-//     $('.button-container-1').hide();
-//     var clickedIcon = document.getElementById('clicked')
-//     clickedIcon.className = 'defininitiondiv'
+function hideDefine(){
+        console.log("this code ran")
+    
 
-
+}
 // }
 
 function setup(){
@@ -33,6 +31,6 @@ function setup(){
     $(".defineBlockchain").hide();
     // $('.button-container-1').hide();
     showDefine();
-    // $('.button-container-1').click(hideDefine);
+    $(".testing").click(hideDefine)
 }
 $(document).ready(setup)
