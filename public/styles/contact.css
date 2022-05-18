@@ -1,50 +1,121 @@
-h3
-  .h3 {
+body{
+    padding-bottom: 20%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#color {
+    background-color: black;
+}
+
+#top {
     font-family: "Roboto", sans-serif;
-    color: #000; }
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#color2{
+    background-color: #15234d;
+}
+
+#down {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+img {
+    border-radius: 50%;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.w {
+    color: white;
+    text-align: center;
+
+}
 
 
-  .content {
-    padding-top: 10%; }
 
-  .contact-wrap {
+
+
+
+.contact-wrap {
     -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2); }
-    .contact-wrap .col-form-label {
-      font-size: 14px;
-      color: #b3b3b3;
-      margin: 0 0 10px 0;
-      display: inline-block;
-      padding: 0; }
-    .contact-wrap .form, .contact-wrap .contact-info {
-      padding: 40px; }
-    .contact-wrap .contact-info {
-      color: rgba(255, 255, 255, 0.5); }
-      .contact-wrap .contact-info ul li {
-        margin-bottom: 15px;
-        color: rgba(255, 255, 255, 0.5); }
-        .contact-wrap .contact-info ul li .wrap-icon {
-          font-size: 20px;
-          color: #fff;
-          margin-top: 5px; }
-    .contact-wrap .form {
-      background: #fff; }
-      .contact-wrap .form h3 {
-        color: #35477d;
-        font-size: 20px;
-        margin-bottom: 30px; }
-    .contact-wrap .contact-info {
-      background: #35477d; }
-      .contact-wrap .contact-info h3 {
-        color: #fff;
-        font-size: 20px;
-        margin-bottom: 30px; }
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+}
 
-    .color {
-        color: white;
-        width: 30px;
-        height: 30px;
+.contact-wrap .col-form-label {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin: 0 0 10px 0;
+    display: inline-block;
+    padding: 0;
+}
 
-    }
+.contact-wrap .form,
+.contact-wrap .contact-info {
+    padding: 40px;
+}
 
-  
+.contact-wrap .contact-info {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-wrap .contact-info ul li {
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-wrap .contact-info ul li .wrap-icon {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.contact-wrap .form {
+    background: #fff;
+}
+
+.contact-wrap .form h3 {
+    color: #35477d;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-wrap .contact-info {
+    background: #35477d;
+}
+
+.contact-wrap .contact-info h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.color {
+    color: white;
+    width: 30px;
+    height: 30px;
+
+}
