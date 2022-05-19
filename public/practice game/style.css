@@ -1,0 +1,129 @@
+.wrapper {
+    position: absolute;
+    /* border: 5px solid black; */
+    width: 600px;
+    height: 500px;
+    /* transform: translate(-50%, -50%); */
+    background: url('./images/background.png');
+}
+
+#controller {
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    transform: translate(0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+button{
+    background-color: lightgray;
+    touch-action: manipulation;
+}
+#horizontal_controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+html{
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    width: auto;
+    background-color: rgb(64, 64, 238);
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-48 {
+    font-size: 60px;
+}
+/* Overlay for start game */
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+  }
+  #text{
+    position: absolute;
+    top: 40%;
+    left: 57%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+  }
+
+  #secret{
+      position: absolute;
+        top: 93%;
+        left: 83%;
+        padding: 10px;
+        opacity: 0;
+  }
+@media only screen and (max-width: 622px) {
+
+    body {
+        height: 50%;
+        width: 100%;
+        justify-items: center;
+    }
+
+    #controller {
+        width: 100%;
+    }
+
+    .wrapper {
+        height: 50%;
+        width: 100%;
+    }
+
+    buttons {
+        size: 100%;
+    }
+}
+@media only screen and (max-height: 1000px) {
+    body {
+        height: 50%;
+        width: 100%;
+        justify-items: center;
+    }
+
+    #controller {
+        width: 100%;
+    }
+
+    .wrapper {
+        height: 50%;
+        width: 100%;
+    }
+
+    buttons {
+        size: 100%;
+    }
+    
+}

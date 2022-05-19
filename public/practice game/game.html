@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Frogger</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Start Screen -->
+    <div id="overlay" onclick="off()">
+        <div id="text">
+            <p class="noselect">Tap to play</p>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="wrapper">
+        <canvas id="canvas1"></canvas>s
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <canvas id="canvas4"></canvas>
+        <canvas id="canvas5"></canvas>
+    </div>
+
+
+    <!-- Game controller -->
+    <div id="controller">
+        <button id="up"><span class="material-icons md-48">arrow_upward</span></button>
+        <div id="horizontal_controls">
+            <button id="left"> <span class="material-icons md-48">arrow_back</span></button>
+            <button style="visibility: hidden"> <span class="material-icons md-48">arrow_forward</span></button>
+
+            <button id="right"> <span class="material-icons md-48">arrow_forward</span></button>
+        </div>
+        <button id="down"> <span class="material-icons md-48">arrow_downward</span></button>
+    </div>
+    <button id="secret">Secret</button>
+
+
+    <!-- Game audio files -->
+    <audio id="audio" src="./music/Fluffing-a-Duck.mp3" loop="true"></audio>
+    <audio id="easter" src="./music/alex-productions-epic-cinematic-gaming-cyberpunk-reset-[AudioTrimmer.com].mp3"
+        loop="true"></audio>
+
+        
+    <!-- Scripts -->
+    <script src="./scripts/setup.js"></script>
+    <script src="./scripts/frogger.js"></script>
+    <script src="./scripts/obstacle.js"></script>
+    <script src="./scripts/particles.js"></script>
+    <script src="./scripts/utilities.js"></script>
+</body>
+
+</html>
