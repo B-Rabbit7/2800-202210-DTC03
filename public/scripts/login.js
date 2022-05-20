@@ -4,7 +4,7 @@ $("#do-login").click(function() {
     url: `http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com/login/${document.getElementById("user").value}/${document.getElementById("pass").value}`,
     success: function (x){
       console.log(x);
-      window.location.href = 'http://localhost:5000';
+      window.location.href = 'http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com';
     }
   })
 })
@@ -26,7 +26,7 @@ $("#logout").click(function() {
     url: 'http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com/logout',
     success: function (x){
       console.log(x);
-      window.location.href = 'http://localhost:5000';
+      window.location.href = 'http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com';
     }
   })
 })
