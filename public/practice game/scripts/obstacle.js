@@ -85,6 +85,15 @@ function handleObstacles(){
                 ripplesArray.unshift(new Particle(frogger.x, frogger.y));
             }
             resetGame();
+            highscore.pop();
+            $.ajax({
+                url: `http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com/account`,
+                type: "get",
+                success: function (x){
+                    console.log(x.highscore);
+                    highscore.push(x.highscore);
+                }
+            })
         }
     }
 }

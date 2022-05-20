@@ -58,6 +58,17 @@ app.get('/login/:user/:pass', function (req, res) {
     });
 })
 
+app.get('/account', function (req, res) {
+    accountModel.findOne({user: req.session.user, pass: req.session.pass}, function (err, data) {
+        if (err) {
+            console.log("Error " + err);
+        } else {
+            console.log("Data " + data);
+        }
+        res.send(data);
+    });
+})
+
 app.get('/highscore/:score', function (req, res) {
     // console.log(req.body)
     accountModel.updateOne({

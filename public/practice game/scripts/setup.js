@@ -56,6 +56,16 @@ rectIceSprite.src = './images/ice.png';
 const squareIceSprite = new Image();
 squareIceSprite.src = './images/squareice.png';
 
+const highscore = [];
+
+$.ajax({
+    url: `http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com/account`,
+    type: "get",
+    success: function (x){
+        console.log(x.highscore);
+        highscore.push(x.highscore);
+    }
+})
 
 // Start Game
 function off() {
