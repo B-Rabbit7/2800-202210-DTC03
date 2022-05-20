@@ -23,7 +23,8 @@ mongoose.connect("mongodb+srv://terra:studium2022@cluster0.sikkg.mongodb.net/ter
     { useNewUrlParser: true, useUnifiedTopology: true });
 const accountSchema = new mongoose.Schema({
     user: String,
-    pass: String
+    pass: String,
+    highscore: Number
 });
 const accountModel = mongoose.model("accounts", accountSchema);
 
@@ -50,8 +51,38 @@ app.get('/login/:user/:pass', function (req, res) {
         }
         if (data) {
             req.session.authenticated = true;
+            req.session.user = username;
+            req.session.pass = password;
         }
         res.send(data);
+    });
+})
+
+app.get('/account', function (req, res) {
+    accountModel.findOne({user: req.session.user, pass: req.session.pass}, function (err, data) {
+        if (err) {
+            console.log("Error " + err);
+        } else {
+            console.log("Data " + data);
+        }
+        res.send(data);
+    });
+})
+
+app.get('/highscore/:score', function (req, res) {
+    // console.log(req.body)
+    accountModel.updateOne({
+        username: req.session.user,
+        pass: req.session.pass
+    },{
+        $max: {'highscore': req.params.score}
+    } ,function (err, data) {
+        if (err) {
+            console.log("Error " + err);
+        } else {
+            console.log("Data " + data);
+        }
+        res.send("Update request is successful!");
     });
 })
 
@@ -59,16 +90,26 @@ app.put('/create/:user/:pass', function (req, res) {
     let username = req.params.user;
 	let password = req.params.pass;
     console.log(username, password)
-    accountModel.create({
+    accountModel.findOne({
         user: username,
         pass: password
     }, function (err, data) {
-        if (err) {
-            console.log("Error " + err);
+        if (data) {
+            res.send(null);
         } else {
-            console.log("Data " + data);
+            accountModel.create({
+                user: username,
+                pass: password,
+                highscore: 0
+            }, function (err, data) {
+                if (err) {
+                    console.log("Error " + err);
+                } else {
+                    console.log("Data " + data);
+                }
+                res.send(data);
+            });
         }
-        res.send(data);
     });
 })
 

@@ -18,7 +18,7 @@ li{
     color: #FFFFFF;
     position: relative;
 }
-h3 {
+main h3 {
     display: flex;
     justify-content: center;
     padding-top: 30px;
