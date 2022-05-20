@@ -68,6 +68,8 @@ function off() {
 //   Easter Egg
 $('#secret').click(function () {
     egg_count++;
+});
+$('#secret_start').click(function () {
     console.log(egg_count)
     if (egg_count >= 5) {
         alert("Unlocked extreme mode prepare to die")

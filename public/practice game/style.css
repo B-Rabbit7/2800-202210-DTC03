@@ -23,10 +23,12 @@ canvas {
     width: 100%;
     height: 100%;
 }
-button{
+
+button {
     background-color: lightgray;
     touch-action: manipulation;
 }
+
 #horizontal_controls {
     display: flex;
     justify-content: space-between;
@@ -37,9 +39,11 @@ button{
     flex-direction: column;
     align-content: center;
 }
-html{
+
+html {
     height: 100%;
 }
+
 body {
     min-height: 100%;
     width: auto;
@@ -54,6 +58,7 @@ body {
 .material-icons.md-48 {
     font-size: 60px;
 }
+
 /* Overlay for start game */
 #overlay {
     position: fixed;
@@ -64,27 +69,48 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
     cursor: pointer;
-  }
-  #text{
+}
+
+#text {
     position: absolute;
     top: 40%;
     left: 57%;
     font-size: 50px;
     color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-  }
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
 
-  #secret{
-      position: absolute;
-        top: 93%;
-        left: 83%;
-        padding: 10px;
-        opacity: 0;
-  }
+#back {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: red;
+}
+
+#secret {
+    position: absolute;
+    top: 93%;
+    right: 83%;
+    padding: 10px;
+    opacity: 0;
+}
+
+#secret_start {
+    position: absolute;
+    top: 93%;
+    left: 83%;
+    padding: 10px;
+    opacity: 0;
+}
+
 @media only screen and (max-width: 622px) {
 
     body {
@@ -106,6 +132,7 @@ body {
         size: 100%;
     }
 }
+
 @media only screen and (max-height: 1000px) {
     body {
         height: 50%;
@@ -125,5 +152,5 @@ body {
     buttons {
         size: 100%;
     }
-    
+
 }
