@@ -30,7 +30,7 @@ const accountModel = mongoose.model("accounts", accountSchema);
 
 app.get('/', function (req, res) {
     if(req.session.authenticated)
-        res.sendFile(__dirname + "/public/index.html")
+        res.sendFile(__dirname + "/public/pages/main.html")
     else {
         res.sendFile(__dirname + "/public/pages/login.html")
     }
