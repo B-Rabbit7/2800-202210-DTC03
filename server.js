@@ -90,17 +90,26 @@ app.put('/create/:user/:pass', function (req, res) {
     let username = req.params.user;
 	let password = req.params.pass;
     console.log(username, password)
-    accountModel.create({
+    accountModel.findOne({
         user: username,
-        pass: password,
-        highscore: 0
+        pass: password
     }, function (err, data) {
-        if (err) {
-            console.log("Error " + err);
+        if (data) {
+            res.send(null);
         } else {
-            console.log("Data " + data);
+            accountModel.create({
+                user: username,
+                pass: password,
+                highscore: 0
+            }, function (err, data) {
+                if (err) {
+                    console.log("Error " + err);
+                } else {
+                    console.log("Data " + data);
+                }
+                res.send(data);
+            });
         }
-        res.send(data);
     });
 })
 

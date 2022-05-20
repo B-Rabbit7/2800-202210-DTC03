@@ -21,11 +21,18 @@ $("#do-create").click(function() {
     type: "put",
     url: `http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com/create/${document.getElementById("user").value}/${document.getElementById("pass").value}`,
     success: function (x){
-      console.log(x);
-      $("#login").append(`<br><div class="alertsuccess">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-      Successfully created account.
-      </div>`);
+      if (x) {
+        console.log(x);
+        $("#login").append(`<br><div class="alertsuccess">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Successfully created account.
+        </div>`);
+      } else {
+        $("#login").append(`<br><div class="alertfailure">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <p>Failed to create account.</p><p>Username and password combination is taken.</p>
+        </div>`);
+      }
     }
   })
 })
