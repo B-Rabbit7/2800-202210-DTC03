@@ -29,7 +29,7 @@ const accountModel = mongoose.model("accounts", accountSchema);
 
 app.get('/', function (req, res) {
     if(req.session.authenticated)
-        res.sendFile(__dirname + "/public/index.html")
+        res.sendFile(__dirname + "/public/pages/main.html")
     else {
         res.sendFile(__dirname + "/public/pages/login.html")
     }
@@ -39,18 +39,6 @@ app.get('/login', function (req, res) {
     res.sendFile(__dirname + "/public/pages/login.html")
 })
 
-<<<<<<< HEAD
-app.post('/login', function (req, res, next) {
-    let username = req.body.username;
-	let password = req.body.password;
-    if(users[username] == password) {
-        req.session.authenticated = true
-        req.session.user = username
-        res.sendFile(__dirname + "/public/pages/main.html")
-    }else{
-        req.session.authenticated = false
-    }
-=======
 app.get('/login/:user/:pass', function (req, res) {
     let username = req.params.user;
 	let password = req.params.pass;
@@ -87,7 +75,6 @@ app.put('/create/:user/:pass', function (req, res) {
 app.get('/logout', function (req, res) {
     req.session.authenticated = false;
     res.send("Logout succeeded");
->>>>>>> dev
 })
 
 app.use(express.static(__dirname + '/public'));
