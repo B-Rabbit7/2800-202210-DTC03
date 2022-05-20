@@ -72,6 +72,7 @@ function off() {
     document.getElementById("overlay").style.display = "none";
     if (egg_count < 5) {
         var audio = document.getElementById("audio");
+        audio.volume = 0.1;
         audio.play();
     }
 }
@@ -96,6 +97,7 @@ $('#secret_start').click(function () {
         audio.pause();
         audio.currentTime = 0
         var audio = document.getElementById("easter");
+        audio.volume = 0.1;
         audio.play();
     }
 })
