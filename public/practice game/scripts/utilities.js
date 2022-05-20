@@ -149,6 +149,13 @@ function collision(first, second){
 }
 
 function resetGame(){
+    $.ajax({
+        url: `http://learninghub-env.eba-7q6hwca8.us-west-1.elasticbeanstalk.com/highscore/${score}`,
+        type: "get",
+        success: function (x){
+            console.log(x);
+        }
+    })
     frogger.x = canvas.width/2 - frogger.width/2;
     frogger.y = canvas.height - frogger.height - 40;
     score = 0;
