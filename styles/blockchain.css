@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -6,7 +9,15 @@ main {
 header {
     position: relative;
 }
-
+ol{
+    padding-top: 30px;
+    color: #FFFFFF;
+    position: relative;
+}
+li{
+    color: #FFFFFF;
+    position: relative;
+}
 h3 {
     display: flex;
     justify-content: center;
@@ -85,6 +96,13 @@ div.testing {
     animation-iteration-count: 10;
 }
 
+div.pointicon{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 .definitionButton {
     background-color: #DBA60E;
     color: #FFFFFF;
@@ -157,8 +175,7 @@ div.testing {
     }
 }
 
-/* bar stuff */
-
+/* ===================  Table  Stuff ===================== */
 .table{
     /* height: 100%; */
     width: 380px;
@@ -167,35 +184,6 @@ div.testing {
     margin-top: 20px;
     left: 2px;
 }
-/* .sent1{
-    color: #39cccc;
-}
-
-.paid1{
-    color: #7fdbff;
-}
-.sent2{
-    color: #39cccc;
-}
-
-.paid2{
-    color: #7fdbff;
-}
-.sent3{
-    color: #39cccc;
-}
-
-.paid3{
-    color: #7fdbff;
-}
-.sent4{
-    color: #39cccc;
-}
-
-.paid4{
-    color: #7fdbff;
-} */
-
 #q-graph {
     display: block;
    /* fixes layout wonkiness in FF1.5 */
@@ -306,43 +294,67 @@ div.testing {
 }
 #q-graph .sent1 {
     left: 0px;
-    background-color: #ffbd00;
+    background-color: #fff700;
     border-color: transparent;
+    height: 0;
+    transition: all 5s ease;
+    bottom: 0;
 }
 #q-graph .sent2 {
     left: 0px;
     background-color: #f72585;
     border-color: transparent;
+    height: 0;
+    transition: all 5s ease;
+    bottom: 0;
 }
 #q-graph .sent3 {
     left: 0px;
-    background-color: #38b000;
+    background-color: #1dbd1d;
     border-color: transparent;
+    height: 0;
+    transition: all 5s ease;
+    bottom: 0;
 }
 #q-graph .sent4 {
     left: 0px;
-    background-color: #4361ee;
+    background-color: #008000;
     border-color: transparent;
+    height: 0;
+    transition: all 5s ease;
+    bottom: 0;
 }
 #q-graph .paid1 {
     left: 29px;
     background-color: #faa307;
     border-color: transparent;
+    height: 0;
+    transition: all 5s ease;
+    bottom: 0;
 }
 #q-graph .paid2 {
     left: 29px;
     background-color: #b5179e;
     border-color: transparent;
+    height: 0;
+    transition: all 5s ease;
+    bottom: 0;
 }
 #q-graph .paid3 {
     left: 29px;
     background-color: #008000;
     border-color: transparent;
+    height: 0;
+    transition: all 5s ease;
+    bottom: 0;
 }
 #q-graph .paid4 {
     left: 29px;
-    background-color: #3f37c9;
+    background-color: #d1fa07;
     border-color: transparent;
+    height: 0;
+    transition: all 5s ease;
+    bottom: 0;
 }
 #ticks {
     position: relative;
@@ -375,8 +387,58 @@ div.testing {
     font-family: "fira-sans-2", Verdana, sans-serif;
     font-weight: bold;
 }
+/* ===================== Added Classes For IntersectionObserver =================== */
 
+#q-graph td.sent1.bar.inter1 {
+    left: 0px;
+    background-color: #ffbd00;
+    border-color: transparent;
+    height: 60px;
+}
+#q-graph td.sent2.bar.inter1 {
+    left: 0px;
+    background-color: #f72585;
+    border-color: transparent;
+    height: 90px;
+}
+#q-graph td.sent3.bar.inter1 {
+    left: 0px;
+    background-color: #1dbd1d;
+    border-color: transparent;
+    height: 95px;
+}
+#q-graph td.sent4.bar.inter1 {
+    left: 0px;
+    background-color: #4361ee;
+    border-color: transparent;
+    height: 260px;
+}
 
+/* =============== paid bar sections ================== */
+#q-graph td.paid1.bar.inter1{
+    left: 29px;
+    background-color: #faa307;
+    border-color: transparent;
+    height: 87px;
+}
+#q-graph td.paid2.bar.inter1{
+    left: 29px;
+    background-color: #b5179e;
+    border-color: transparent;
+    height: 60px;
+}
+#q-graph td.paid3.bar.inter1{
+    left: 29px;
+    background-color: #008000;
+    border-color: transparent;
+    height: 160px;
+}
+#q-graph td.paid4.bar.inter1{
+    left: 29px;
+    background-color: #3f37c9;
+    border-color: transparent;
+    height: 260px;
+}
 
 
 
