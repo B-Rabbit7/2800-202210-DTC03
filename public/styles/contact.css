@@ -2,13 +2,17 @@ body{
     padding-bottom: 20%;
 }
 
+nav  {
+    color: white;
+}
+
 main {
     display: flex;
     flex-direction: column;
 }
 
 #color {
-    background-color: black;
+    background-color: #001233;
 }
 
 #top {
@@ -33,7 +37,7 @@ main {
     padding-right: 5%;
 }
 
-img {
+.images {
     border-radius: 50%;
 }
 
@@ -54,11 +58,6 @@ img {
     text-align: center;
 
 }
-
-
-
-
-
 
 .contact-wrap {
     -webkit-box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
