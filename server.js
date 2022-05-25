@@ -115,7 +115,7 @@ app.put('/create/:user/:pass', function (req, res) {
 
 app.get('/logout', function (req, res) {
     req.session.authenticated = false;
-    res.send("Logout succeeded");
+    res.sendFile(__dirname + "/public/pages/login.html");
 })
 
 app.use(express.static(__dirname + '/public'));
