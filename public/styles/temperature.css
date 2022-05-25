@@ -4,6 +4,7 @@ main {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30%;
 }
 main h3{
     display: flex;
@@ -28,6 +29,9 @@ p{
     text-align: center;
     margin: 0%;
 }
+a{
+  color: white;
+}
 ul{
     position: relative;
     font-weight: lighter;
@@ -35,8 +39,6 @@ ul{
     color: #FFFFFF;
     font-size: smaller;
     text-align: center;
-    padding-left: 35%;
-    padding-right: 35%;
 }
 .iconify{
     position: relative;
