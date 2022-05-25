@@ -1,6 +1,7 @@
-html{
+html {
     scroll-behavior: smooth;
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -9,15 +10,18 @@ main {
 header {
     position: relative;
 }
-ol{
+
+ol {
     padding-top: 30px;
     color: #FFFFFF;
     position: relative;
 }
-li{
+
+li {
     color: #FFFFFF;
     position: relative;
 }
+
 h3 {
     display: flex;
     justify-content: center;
@@ -96,11 +100,15 @@ div.testing {
     animation-iteration-count: 10;
 }
 
-div.pointicon{
+div.pointicon {
     display: flex;
     justify-content: center;
     height: 100%;
     width: 100%;
+}
+
+.icon2{
+    margin : 30px auto 0; 
 }
 
 .definitionButton {
@@ -176,7 +184,7 @@ div.pointicon{
 }
 
 /* ===================  Table  Stuff ===================== */
-.table{
+.table {
     /* height: 100%; */
     width: 380px;
     background-color: #FFFFFF;
@@ -184,9 +192,10 @@ div.pointicon{
     margin-top: 20px;
     left: 2px;
 }
+
 #q-graph {
     display: block;
-   /* fixes layout wonkiness in FF1.5 */
+    /* fixes layout wonkiness in FF1.5 */
     position: relative;
     width: 370px;
     height: 300px;
@@ -195,6 +204,7 @@ div.pointicon{
     background: transparent;
     font-size: 11px;
 }
+
 #q-graph caption {
     caption-side: top;
     width: 390px;
@@ -208,7 +218,10 @@ div.pointicon{
     margin-top: 10px;
     text-align: center;
 }
-#q-graph tr, #q-graph th, #q-graph td {
+
+#q-graph tr,
+#q-graph th,
+#q-graph td {
     position: absolute;
     bottom: 0;
     width: 60px;
@@ -218,64 +231,83 @@ div.pointicon{
     text-align: center;
     background-color: #FFFFFF;
 }
+
 #q-graph td {
     transition: all 0.3s ease;
 }
+
 #q-graph td:hover {
     background-color: #4d4d4d;
     opacity: 0.9;
     color: white;
 }
+
 #q-graph thead tr {
     left: 100%;
     top: 50%;
     bottom: auto;
     margin: -2.5em 0 0 5em;
 }
+
 #q-graph thead th {
     width: 7.5em;
     height: auto;
     padding: 0.5em 1em;
 }
-#q-graph thead th.sent1, #q-graph thead th.sent2,#q-graph thead th.sent3, #q-graph thead th.sent4  {
+
+#q-graph thead th.sent1,
+#q-graph thead th.sent2,
+#q-graph thead th.sent3,
+#q-graph thead th.sent4 {
     top: 0;
     left: 0;
     line-height: 2;
 }
-#q-graph thead th.paid1,#q-graph thead th.paid2,#q-graph thead th.paid3,#q-graph thead th.paid4 {
+
+#q-graph thead th.paid1,
+#q-graph thead th.paid2,
+#q-graph thead th.paid3,
+#q-graph thead th.paid4 {
     top: 2.75em;
     line-height: 2;
     left: 0;
 }
+
 #q-graph tbody tr {
     height: 296px;
     padding-top: 2px;
     border-right: 1px dotted #c4c4c4;
     color: #aaa;
 }
+
 #q-graph #q1 {
     left: 100px;
     background-color: #8eecf5;
 }
+
 #q-graph #q2 {
     left: 170px;
     background-color: #8eecf5;
 }
+
 #q-graph #q3 {
     left: 240px;
     background-color: #8eecf5;
 }
+
 #q-graph #q4 {
     left: 310px;
     border-right: none;
     background-color: #8eecf5;
 }
+
 #q-graph tbody th {
     bottom: -2em;
     vertical-align: top;
     font-weight: normal;
     color: #333;
 }
+
 #q-graph .bar {
     width: 30px;
     border: 1px solid;
@@ -283,15 +315,17 @@ div.pointicon{
     color: #000;
 
 }
+
 #q-graph .bar p {
     padding: 0;
     opacity: 0.4;
     width: 100%;
-    font-size: 90%; 
+    font-size: 90%;
     overflow-wrap: break-word;
     font-weight: bolder;
 
 }
+
 #q-graph .sent1 {
     left: 0px;
     background-color: #fff700;
@@ -300,6 +334,7 @@ div.pointicon{
     transition: all 5s ease;
     bottom: 0;
 }
+
 #q-graph .sent2 {
     left: 0px;
     background-color: #f72585;
@@ -308,6 +343,7 @@ div.pointicon{
     transition: all 5s ease;
     bottom: 0;
 }
+
 #q-graph .sent3 {
     left: 0px;
     background-color: #1dbd1d;
@@ -316,6 +352,7 @@ div.pointicon{
     transition: all 5s ease;
     bottom: 0;
 }
+
 #q-graph .sent4 {
     left: 0px;
     background-color: #008000;
@@ -324,6 +361,7 @@ div.pointicon{
     transition: all 5s ease;
     bottom: 0;
 }
+
 #q-graph .paid1 {
     left: 29px;
     background-color: #faa307;
@@ -332,6 +370,7 @@ div.pointicon{
     transition: all 5s ease;
     bottom: 0;
 }
+
 #q-graph .paid2 {
     left: 29px;
     background-color: #b5179e;
@@ -340,6 +379,7 @@ div.pointicon{
     transition: all 5s ease;
     bottom: 0;
 }
+
 #q-graph .paid3 {
     left: 29px;
     background-color: #008000;
@@ -348,6 +388,7 @@ div.pointicon{
     transition: all 5s ease;
     bottom: 0;
 }
+
 #q-graph .paid4 {
     left: 29px;
     background-color: #d1fa07;
@@ -356,6 +397,7 @@ div.pointicon{
     transition: all 5s ease;
     bottom: 0;
 }
+
 #ticks {
     position: relative;
     top: -310px;
@@ -367,6 +409,7 @@ div.pointicon{
     font-size: 10px;
     font-family: "fira-sans-2", Verdana, sans-serif;
 }
+
 #ticks .tick {
     position: relative;
     /* border-bottom: 1px dotted #c4c4c4; */
@@ -374,9 +417,10 @@ div.pointicon{
     width: 390px;
     height: 25%;
 }
+
 #ticks .tick div {
     position: relative;
-    
+
     /* top: -0.8em; */
     /* margin: 0 0 0 0.5em; */
     color: #000;
@@ -387,6 +431,7 @@ div.pointicon{
     font-family: "fira-sans-2", Verdana, sans-serif;
     font-weight: bold;
 }
+
 /* ===================== Added Classes For IntersectionObserver =================== */
 
 #q-graph td.sent1.bar.inter1 {
@@ -395,18 +440,21 @@ div.pointicon{
     border-color: transparent;
     height: 60px;
 }
+
 #q-graph td.sent2.bar.inter1 {
     left: 0px;
     background-color: #f72585;
     border-color: transparent;
     height: 90px;
 }
+
 #q-graph td.sent3.bar.inter1 {
     left: 0px;
     background-color: #1dbd1d;
     border-color: transparent;
     height: 95px;
 }
+
 #q-graph td.sent4.bar.inter1 {
     left: 0px;
     background-color: #4361ee;
@@ -415,28 +463,242 @@ div.pointicon{
 }
 
 /* =============== paid bar sections ================== */
-#q-graph td.paid1.bar.inter1{
+#q-graph td.paid1.bar.inter1 {
     left: 29px;
     background-color: #faa307;
     border-color: transparent;
     height: 87px;
 }
-#q-graph td.paid2.bar.inter1{
+
+#q-graph td.paid2.bar.inter1 {
     left: 29px;
     background-color: #b5179e;
     border-color: transparent;
     height: 60px;
 }
-#q-graph td.paid3.bar.inter1{
+
+#q-graph td.paid3.bar.inter1 {
     left: 29px;
     background-color: #008000;
     border-color: transparent;
     height: 160px;
 }
-#q-graph td.paid4.bar.inter1{
+
+#q-graph td.paid4.bar.inter1 {
     left: 29px;
     background-color: #3f37c9;
     border-color: transparent;
     height: 260px;
 }
 
+/* =========================== Flipping Content Cards 1 ========================*/
+:root {
+    --primary: #4cc9f0;
+    --secondary: #7209b7;
+    --dark: black;
+    --light: white;
+
+}
+
+.card {
+    margin: 30px auto 0;
+    width: 330px;
+    height: 600px;
+    perspective: 800px;
+    background-color: #3A0CA3;
+}
+
+.card__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__face--front h2 {
+    color: #FFF;
+    font-size: 32px;
+}
+
+.card__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card__header {
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
+    z-index: -1;
+    border-radius: 0px 0px 50% 50%;
+}
+
+.card__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card__body {
+    padding: 30px;
+}
+
+.card__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* =========================== Flipping Content Cards 2 ========================*/
+:root {
+    --primary1: #ff5400;
+    --secondary1: #9e0059;
+    --dark: black;
+    --light: white;
+
+}
+
+.card1 {
+    margin: 30px auto 0;
+    width: 330px;
+    height: 600px;
+    perspective: 800px;
+    background-color: #3A0CA3;
+}
+
+.card1__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card1__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card1__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card1__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary1), var(--secondary1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card1__face--front h2 {
+    color: #FFF;
+    font-size: 32px;
+}
+
+.card1__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card1__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card1__header {
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card1__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom left, var(--primary1) 10%, var(--secondary1) 115%);
+    z-index: -1;
+    border-radius: 0px 0px 50% 50%;
+}
+
+.card1__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card1__body {
+    padding: 30px;
+}
+
+.card1__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card1__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
