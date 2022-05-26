@@ -12,6 +12,12 @@ $("#do-login").click(function() {
         Login failed.
         </div>`);
       }
+    },
+    error: function() {
+      $("#login").append(`<br><div class="alertfailure">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Login failed.
+        </div>`);
     }
   })
 })
