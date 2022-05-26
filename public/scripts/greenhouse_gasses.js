@@ -61,7 +61,8 @@ $(document).ready(function () {
     }
   });
 });
-// Populate Pie Chart with top global emission creators
+
+// Populate bar Chart with top global emission creators from origin
 $(document).ready(function () {
   var xValues = ["China", "United States", "EU"];
   var yValues = [27, 15, 9];
@@ -87,6 +88,8 @@ $(document).ready(function () {
     }
   });
 });
+
+
 // Image Scroller
 function initComparisons() {
   var x, i;
@@ -97,7 +100,7 @@ function initComparisons() {
     pass the "overlay" element as a parameter when executing the compareImages function:*/
     compareImages(x[i]);
   }
-
+// Compares images
   function compareImages(img) {
     var slider, img, clicked = 0,
       w, h;
@@ -171,3 +174,4 @@ function initComparisons() {
     }
   }
 }
+initComparisons();
