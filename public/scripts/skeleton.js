@@ -5,10 +5,11 @@ function loadSkeleton(){
 }
 function openNav() {
   console.log("called opennav")
-    document.getElementById("myNav").style.height = "100%";
-  }
+  document.getElementById("myNav").style.height = "100%";
+}
   
   /* Close when someone clicks on the "x" symbol inside the overlay */
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
+// function closeNav() {
+//   console.log("close")
+//   // document.getElementById("myNav").style.height = "0%";
+// }
