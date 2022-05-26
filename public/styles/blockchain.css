@@ -97,7 +97,8 @@ div.blockchainbgicon2 {
 div.testing {
     position: relative;
     animation: spin 5s 2;
-    animation-iteration-count: 10;
+    animation-iteration-count: 1;
+    margin: 30px auto 0;
 }
 
 div.pointicon {
@@ -210,12 +211,13 @@ div.pointicon {
     width: 390px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    top: -40px;
+    top: -50px;
     position: absolute;
-    /* z-index: 10; */
+    z-index: 10;
     font-weight: bold;
     color: #FFFFFF;
     margin-top: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -515,6 +517,7 @@ div.pointicon {
     transform-style: preserve-3d;
     cursor: pointer;
     position: relative;
+    text-align: center;
 }
 
 .card__inner.is-flipped {
@@ -537,6 +540,7 @@ div.pointicon {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .card__face--front h2 {
@@ -582,6 +586,8 @@ div.pointicon {
 
 .card__body {
     padding: 30px;
+    text-align: center;
+
 }
 
 .card__body h3 {
@@ -597,7 +603,7 @@ div.pointicon {
     line-height: 1.4;
 }
 
-/* =========================== Flipping Content Cards 2 ========================*/
+/* =========================== Flipping Content Cards 1 ========================*/
 :root {
     --primary1: #ff5400;
     --secondary1: #9e0059;
@@ -643,6 +649,7 @@ div.pointicon {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .card1__face--front h2 {
@@ -688,6 +695,7 @@ div.pointicon {
 
 .card1__body {
     padding: 30px;
+    text-align: center;
 }
 
 .card1__body h3 {
@@ -698,6 +706,250 @@ div.pointicon {
 }
 
 .card1__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+.card1__body ol{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+.card1__body li{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* =========================== Flipping Content Cards 2 ========================*/
+:root {
+    --primary2: #ffff3f;
+    --secondary2: #1db233;
+    --dark: black;
+    --light: white;
+
+}
+
+.card2 {
+    margin: 30px auto 0;
+    width: 330px;
+    height: 600px;
+    perspective: 800px;
+    background-color: #3A0CA3;
+}
+
+.card2__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card2__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card2__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card2__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary2), var(--secondary2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card2__face--front h2 {
+    color: #FFF;
+    font-size: 32px;
+}
+
+.card2__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card2__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card2__header {
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card2__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom left, var(--primary2) 10%, var(--secondary2) 115%);
+    z-index: -1;
+    border-radius: 0px 0px 50% 50%;
+}
+
+.card2__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card2__body {
+    padding: 30px;
+}
+
+.card2__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card2__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+.card2__body ol{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+.card2__body li{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* =========================== Flipping Content Cards 3 ========================*/
+:root {
+    --primary3: #ff99b6;
+    --secondary3: #f20089;
+    --dark: black;
+    --light: white;
+
+}
+
+.card3 {
+    margin: 30px auto 0;
+    width: 330px;
+    height: 600px;
+    perspective: 800px;
+    background-color: #3A0CA3;
+}
+
+.card3__inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card3__inner.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card3__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card3__face--front {
+    background-image: linear-gradient(to bottom right, var(--primary3), var(--secondary3));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card3__face--front h2 {
+    color: #FFF;
+    font-size: 32px;
+}
+
+.card3__face--back {
+    background-color: var(--light);
+    transform: rotateY(180deg);
+}
+
+.card3__content {
+    width: 100%;
+    height: 100%;
+}
+
+.card3__header {
+    position: relative;
+    padding: 30px 30px 40px;
+}
+
+.card3__header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom left, var(--primary3) 10%, var(--secondary3) 115%);
+    z-index: -1;
+    border-radius: 0px 0px 50% 50%;
+}
+
+.card3__header h2 {
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card3__body {
+    padding: 30px;
+}
+
+.card3__body h3 {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card3__body p {
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+.card3__body ol{
+    color: var(--dark);
+    font-size: 18px;
+    line-height: 1.4;
+}
+.card3__body li{
     color: var(--dark);
     font-size: 18px;
     line-height: 1.4;
