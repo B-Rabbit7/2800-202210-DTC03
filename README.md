@@ -120,6 +120,9 @@ It also has the following subfolders and files:
 Adapted Code from [Learn JavaScript By Building Games How To Make A Game With Vanilla JS Frogger
 ](https://youtu.be/GXvNEwu9cgM)
 
+Refrences:
+[Who Is Responsible For Climate Change? – Who Needs To Fix It?](https://www.youtube.com/watch?v=ipVxxxqwBQw&t=489s&ab_channel=Kurzgesagt%E2%80%93InaNutshell)
+
 ## Contact Information
 * [Joseph Chan](https://www.linkedin.com/in/joseph-chan-113822203/)
 
