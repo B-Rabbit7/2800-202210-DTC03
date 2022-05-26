@@ -52,8 +52,11 @@ p {
   
   .flip-box-front {
     background-color: #3A0CA3;
-    color: black;
-  }
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
   .flip-box-back {
     background-color: dodgerblue;
@@ -122,7 +125,9 @@ background-color: white;
 
 
 
-
+h5{
+  text-align: center;
+}
 /* CSS for image comparison */
 * {box-sizing: border-box;}
 
@@ -130,7 +135,7 @@ background-color: white;
   position: relative;
   height: 200px; /*should be the same height as the images*/
   margin-bottom: 100px;
-  right: 40%;
+  right: 47%;
 }
 
 .img-comp-img {
@@ -171,5 +176,6 @@ h3{
     .padding {
         padding: 1rem
     }
+
 }
 

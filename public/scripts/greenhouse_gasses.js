@@ -1,36 +1,92 @@
-
 // Populate pie chart with premature pollution related deaths
 $(document).ready(function () {
-  var ctx = $("#chart-line");
-  var myLineChart = new Chart(ctx, {
-    type: 'pie',
+
+  var xValues = ["World", "East Asia", "Europe", "North America", "West Asia"];
+  var yValues = [3610000, 1700000, 433560, 243609, 183533];
+  var barColors = ["blue", "orange", "green", "purple", "red"];
+
+  new Chart("deaths", {
+    type: "pie",
     data: {
-      labels: ["World", "East Asia", "Europe", "North America", "West Asia"],
+      labels: xValues,
       datasets: [{
-        data: [3610000, 1700000,433560,243609, 183533],
-        backgroundColor: ["blue", "orange","green", "purple", "red"
-        ]
+        backgroundColor: barColors,
+        data: yValues
       }]
     },
+    options: {
+      scales: {
+        x: {
+          ticks: {
+            color: 'green'
+          }
+        },
+        y: {
+          ticks: {
+            color: 'red'
+          }
+        }
+      },
+      title: {
+        display: true,
+        text: "Premature Pollution Related Deaths"
+      }
+    }
   });
 });
 // Populate bar chart with current global admissions
+
 $(document).ready(function () {
-  var ctx = $("#charts");
-  var myLineChart = new Chart(ctx, {
-    type: 'bar',
+  var xValues = ["Asia", "North America", "Europe", "Africa/South America/Oceania", "Aviation and Shipping"];
+  var yValues = [53, 18, 17, 8, 4];
+  var barColors = ["blue", "orange", "green", "purple", "red"];
+
+  new Chart("responsibility", {
+    type: "bar",
     data: {
-      labels: ["Asia", "North America", "Europe", "Africa/South America/Oceania", "Aviation and Shipping"],
+      labels: xValues,
       datasets: [{
-        data: [53, 18,17,8, 4],
-        backgroundColor: ["blue", "orange","green", "purple", "red"
-        ]
+        backgroundColor: barColors,
+        data: yValues
       }]
     },
+    options: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: "Current Global Emissions"
+      }
+    }
   });
 });
+// Populate Pie Chart with top global emission creators
+$(document).ready(function () {
+  var xValues = ["China", "United States", "EU"];
+  var yValues = [27, 15, 9];
+  var barColors = ["red", "green", "blue"];
 
-
+  new Chart("global", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        text: "Historic CO2 Origins"
+      }
+    }
+  });
+});
 // Image Scroller
 function initComparisons() {
   var x, i;
@@ -41,8 +97,10 @@ function initComparisons() {
     pass the "overlay" element as a parameter when executing the compareImages function:*/
     compareImages(x[i]);
   }
+
   function compareImages(img) {
-    var slider, img, clicked = 0, w, h;
+    var slider, img, clicked = 0,
+      w, h;
     /*get the width and height of the img element*/
     w = img.offsetWidth;
     h = img.offsetHeight;
@@ -64,6 +122,7 @@ function initComparisons() {
     slider.addEventListener("touchstart", slideReady);
     /*and released (for touch screens:*/
     window.addEventListener("touchend", slideFinish);
+
     function slideReady(e) {
       /*prevent any other actions that may occur when moving over the image:*/
       e.preventDefault();
@@ -73,10 +132,12 @@ function initComparisons() {
       window.addEventListener("mousemove", slideMove);
       window.addEventListener("touchmove", slideMove);
     }
+
     function slideFinish() {
       /*the slider is no longer clicked:*/
       clicked = 0;
     }
+
     function slideMove(e) {
       var pos;
       /*if the slider is no longer clicked, exit this function:*/
@@ -89,6 +150,7 @@ function initComparisons() {
       /*execute a function that will resize the overlay image according to the cursor:*/
       slide(pos);
     }
+
     function getCursorPos(e) {
       var a, x = 0;
       e = (e.changedTouches) ? e.changedTouches[0] : e;
@@ -100,6 +162,7 @@ function initComparisons() {
       x = x - window.pageXOffset;
       return x;
     }
+
     function slide(x) {
       /*resize the image:*/
       img.style.width = x + "px";
@@ -108,4 +171,3 @@ function initComparisons() {
     }
   }
 }
-

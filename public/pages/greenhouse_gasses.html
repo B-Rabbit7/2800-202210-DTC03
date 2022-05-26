@@ -13,8 +13,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="../scripts/greenhouse_gasses.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 
   <!-- icons  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,86 +48,37 @@
       <li>Nitrous Oxide(N₂O)</li>
     </ul>
     <h4>Effects</h4>
-    <div class="page-content page-container" id="page-content">
+      <canvas id="deaths" style="width:100%;max-width:600px; background-color: #3A0CA3; margin-bottom: 10px;"></canvas>
+      Per Year
+      <ul>
+        <li>World: 3.61 million</li>
+        <li>East Asia: 1.7 million</li>
+        <li>Europe: 433,560</li>
+        <li>North America: 243,609</li>
+        <li>West Asia: 183,533</li>
+      </ul>
 
-      <div class="row">
-        <div class="container-fluid d-flex justify-content-center">
-          <div class="col-sm-8 col-md-6">
-            <div class="card">
-              <div class="card-header">Premature Pollution Related Deaths</div>
-              <div class="card-body" style="height: 420px">
-                <div class="chartjs-size-monitor"
-                  style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-                  <div class="chartjs-size-monitor-expand"
-                    style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                    <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
-                  </div>
-                  <div class="chartjs-size-monitor-shrink"
-                    style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                    <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
-                  </div>
-                </div> <canvas id="chart-line" width="299" height="200" class="chartjs-render-monitor"
-                  style="display: block; width: 299px; height: 200px;"></canvas>
-                Per Year
-                <ul>
-                  <li>World: 3.61 million</li>
-                  <li>East Asia: 1.7 million</li>
-                  <li>Europe: 433,560</li>
-                  <li>North America: 243,609</li>
-                  <li>West Asia: 183,533</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    </div>
     </div>
     <h4>Whose Responsibility</h4>
     <h6>Current Global Emissions</h6>
-    <div class="page-content page-container" id="page-content">
+    <canvas id="responsibility" style="width:100%;max-width:600px; background-color: #3A0CA3; margin-bottom: 10px;color: aqua;"></canvas>
 
-      <div class="row">
-        <div class="container-fluid d-flex justify-content-center">
-          <div class="col-sm-8 col-md-6">
-            <div class="card">
-              <div class="card-header">Country</div>
-              <div class="card-body" style="height: 420px">
-                <div class="chartjs-size-monitor"
-                  style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
-                  <div class="chartjs-size-monitor-expand"
-                    style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                    <div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div>
-                  </div>
-                  <div class="chartjs-size-monitor-shrink"
-                    style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
-                    <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
-                  </div>
-                </div> <canvas id="charts" width="299" height="200" class="chartjs-render-monitor"
-                  style="display: block; width: 299px; height: 200px;"></canvas>
-                Per Year
-                <ul>
-                  <li>Asia: 53%</li>
-                  <li>North America: 18%</li>
-                  <li>Europe: 17%</li>
-                  <li>Africa/South America/Oceania: 8%</li>
-                  <li>Aviation and Shipping: 4%</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+    Per Year
+    <ul>
+      <li>Asia: 53%</li>
+      <li>North America: 18%</li>
+      <li>Europe: 17%</li>
+      <li>Africa/South America/Oceania: 8%</li>
+      <li>Aviation and Shipping: 4%</li>
+    </ul>
 
-      </div>
     </div>
 
 
     <p>More then 50% of global CO2 emissions origin from three countries:</p>
-    <ul>
-      <li>China: 27%</li>
-      <li>United States: 15%</li>
-      <li>EU: 9%</li>
-    </ul>
+
+    <canvas id="global" style="width:100%;max-width:600px; background-color: #3A0CA3;margin-bottom: 10px;"></canvas>
 
 
     <div class="flip-box">
@@ -145,7 +95,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="flip-box">
       <div class="flip-box-inner">
         <div class="flip-box-front">
@@ -175,7 +125,7 @@
             income bracket
             contributing to only 14% of global CO2 emissions. </p>
           <p>Countries that contribute the lowest amount to CO2 emissions have the most to loose from climate change.
-            </p>
+          </p>
         </div>
       </div>
     </div>
@@ -200,12 +150,16 @@
       countries who previosuly benefite off the industrial revolution as well as China. Changes can be made to
       drastically reduce the effects of greenhouse gasses and create an alternative energy solution to fossil fuels</p>
     <br>
+
+    <h5> Future June July August Temps Under High Emissions</h5>
+    <img src="../images/thermometer.png" alt="" width="300" height="100">
+    <br>
     <div class="img-comp-container">
       <div class="img-comp-img">
-        <img src="../images/2020-2039.png" width="300" height="200">
+        <img src="../images/2020-2039.png" width="350" height="200">
       </div>
       <div class="img-comp-img img-comp-overlay">
-        <img src="../images/2080.png" width="300" height="200">
+        <img src="../images/2080.png" width="350" height="200">
       </div>
     </div>
   </main>
