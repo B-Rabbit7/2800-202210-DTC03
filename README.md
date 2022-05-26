@@ -114,3 +114,11 @@ It also has the following subfolders and files:
 ## Credits
 
 ## Contact Information
+[Joseph Chan](https://www.google.com)
+Joseph Chan
+
+Setareh Nouri
+
+Alex Pu
+
+Leo Li
