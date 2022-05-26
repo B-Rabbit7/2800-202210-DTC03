@@ -174,4 +174,4 @@ function initComparisons() {
     }
   }
 }
-initComparisons();
+
