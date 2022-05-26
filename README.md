@@ -107,7 +107,9 @@ It also has the following subfolders and files:
 ```
 
 ## How to use Terra Studium
-Go to (http://terrastudium.com/)
+* Go to (http://terrastudium.com/)
+* Users learn through four different modules in our product to fully understand the causes and factors of weather changes.
+* There are some games in our product that allow users to experience a more immersive experience.
 
 ## Resource
 * Icons by Iconify.Design (Free to use)
