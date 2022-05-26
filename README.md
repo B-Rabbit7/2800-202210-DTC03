@@ -6,6 +6,7 @@
 * [How to use Terra Studium](#how-to-use-terra-studium)
 * [Resource](#Resource)
 * [Credits](#credits)
+* [Contact Information](#Contact-Information)
 
 ## General Info
 Our team Scrum Lordz is developing an educational application, Terra Studium, informing the users through an interactive web experience about the different causes of climate change and 4 main factors which directly contribute to it. Included, is a game that will excite users and peak their interest towards the topic of climate change.
@@ -116,9 +117,17 @@ It also has the following subfolders and files:
 * Game images from Google images (Free to use)
 
 ## Credits
-* Joseph Chan
-* Nouri Setareh
-* Alexander Pu
-* Chengyang Li
+Adapted Code from [Learn JavaScript By Building Games How To Make A Game With Vanilla JS Frogger
+](https://youtu.be/GXvNEwu9cgM)
+
+## Contact Information
+* [Joseph Chan](https://www.linkedin.com/in/joseph-chan-113822203/)
+
+* [Setareh Nouri](https://www.linkedin.com/in/setareh-nouri-02157022b/)
+
+* [Alex Pu](https://www.linkedin.com/in/alexander-pu-022644174/)
+
+* [Leo Li](https://www.linkedin.com/in/leoli225/)
+
 
 
