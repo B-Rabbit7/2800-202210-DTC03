@@ -15,18 +15,6 @@ $(document).ready(function () {
       }]
     },
     options: {
-      scales: {
-        x: {
-          ticks: {
-            color: 'green'
-          }
-        },
-        y: {
-          ticks: {
-            color: 'red'
-          }
-        }
-      },
       title: {
         display: true,
         text: "Premature Pollution Related Deaths"
@@ -74,7 +62,7 @@ $(document).ready(function () {
       labels: xValues,
       datasets: [{
         backgroundColor: barColors,
-        data: yValues
+        data: yValues,
       }]
     },
     options: {
