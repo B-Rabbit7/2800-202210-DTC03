@@ -3,10 +3,9 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Contents](#content)
-* [How to install Terra Studium](#how-to-install-terra-studium)
 * [How to use Terra Studium](#how-to-use-terra-studium)
+* [Resource](#Resource)
 * [Credits](#credits)
-* [Contact Information](#contact-information)
 
 ## General Info
 Our team Scrum Lordz is developing an educational application, Terra Studium, informing the users through an interactive web experience about the different causes of climate change and 4 main factors which directly contribute to it. Included, is a game that will excite users and peak their interest towards the topic of climate change.
@@ -107,10 +106,17 @@ It also has the following subfolders and files:
             header.html                 # Header file
 ```
 
-## How to install Terra Studium
-
 ## How to use Terra Studium
+Go to (http://terrastudium.com/)
+
+## Resource
+* Icons by Iconify.Design (Free to use)
+* Game images from Google images (Free to use)
 
 ## Credits
+* Joseph Chan
+* Nouri Setareh
+* Alexander Pu
+* Chengyang Li
 
-## Contact Information
+
