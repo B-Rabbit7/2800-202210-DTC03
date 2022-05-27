@@ -9,7 +9,7 @@
 * [Contact Information](#Contact-Information)
 
 ## General Info
-Our team Scrum Lordz is developing an educational application, Terra Studium, informing the users through an interactive web experience about the different causes of climate change and 4 main factors which directly contribute to it. Included, is a game that will excite users and peak their interest towards the topic of climate change.
+Our team Scrum Lordz is developing an educational application, Terra Studium, which informs users through an interactive web experience about the different causes of climate change.
 
 ## Technologies
 Technologies used for this project:
