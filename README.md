@@ -118,7 +118,7 @@ It also has the following subfolders and files:
 
 [Part 1](https://docs.google.com/spreadsheets/d/19MvylXmdLrxZEdnXJC3IdQSwNrDZqRF23z0M9LchMB8/edit?usp=sharing)
 
-[Part 2](https://docs.google.com/spreadsheets/d/19MvylXmdLrxZEdnXJC3IdQSwNrDZqRF23z0M9LchMB8/edit?usp=sharing)
+[Part 2](https://docs.google.com/document/d/19SZfN-62b4UUDqLULb4NPSaKHYsqvh3jvstJ_5gMGZ0/edit?usp=sharing)
 
 ## How to use Terra Studium
 * Go to (http://terrastudium.com/)
