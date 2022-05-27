@@ -115,6 +115,7 @@ It also has the following subfolders and files:
 * Run npm install
 
 Testing Plan
+
 [Part 1](https://docs.google.com/spreadsheets/d/19MvylXmdLrxZEdnXJC3IdQSwNrDZqRF23z0M9LchMB8/edit?usp=sharing)
 
 [Part 2](https://docs.google.com/spreadsheets/d/19MvylXmdLrxZEdnXJC3IdQSwNrDZqRF23z0M9LchMB8/edit?usp=sharing)
@@ -135,6 +136,7 @@ Adapted Code from:
 * [How TO - Image Comparison Slider](https://www.w3schools.com/howto/howto_js_image_comparison.asp)
 
 Refrences:
+
 [Who Is Responsible For Climate Change? – Who Needs To Fix It?](https://www.youtube.com/watch?v=ipVxxxqwBQw&t=489s&ab_channel=Kurzgesagt%E2%80%93InaNutshell)
 
 ## Contact Information
