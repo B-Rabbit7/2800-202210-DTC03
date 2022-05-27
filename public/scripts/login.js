@@ -1,3 +1,4 @@
+// login to website and redirect to main page
 $("#do-login").click(function() {
   $.ajax({
     type: "get",
@@ -22,6 +23,7 @@ $("#do-login").click(function() {
   })
 })
 
+// Create an account
 $("#do-create").click(function() {
   $.ajax({
     type: "put",
@@ -43,6 +45,7 @@ $("#do-create").click(function() {
   })
 })
 
+// Logout 
 $("#logout").click(function() {
   $.ajax({
     type: "get",
