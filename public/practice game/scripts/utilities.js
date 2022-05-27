@@ -7,7 +7,6 @@ function animate() {
     ctx2.drawImage(background_lvl2, 0, 0, canvas.width, canvas.height);
     handleRipples();
     handleObstacles();
-    //handleParticles();
     
 
     frogger.draw();
@@ -15,7 +14,6 @@ function animate() {
 
 
     handleScoreBoard();
-    //ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height);
     requestAnimationFrame(animate);
 }
 animate();
@@ -142,8 +140,6 @@ function handleScoreBoard(){
     ctx4.strokeText('Highscore', 15, 15);
     ctx4.font = '30px Verdana';
     ctx4.fillText(highscore[0], 40, 50);
-    // ctx4.strokeText('Collisions: ' + collisionCount, 10, 175);
-    // ctx4.strokeText('Game Speed: ' + gameSpeed.toFixed(1), 10, 195);
 }
 
 // collision detection between two rectangles
