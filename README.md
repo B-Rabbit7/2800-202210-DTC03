@@ -107,6 +107,19 @@ It also has the following subfolders and files:
             header.html                 # Header file
 ```
 
+## How to run Terra Studium
+* Install Visual Studio Code IDE
+
+* Clone repository
+
+* Run npm install
+
+* Testing Plan:
+
+[Part 1](https://docs.google.com/spreadsheets/d/19MvylXmdLrxZEdnXJC3IdQSwNrDZqRF23z0M9LchMB8/edit?usp=sharing)
+
+[Part 2](https://docs.google.com/spreadsheets/d/19MvylXmdLrxZEdnXJC3IdQSwNrDZqRF23z0M9LchMB8/edit?usp=sharing)
+
 ## How to use Terra Studium
 * Go to (http://terrastudium.com/)
 * Users learn through four different modules in our product to fully understand the causes and factors of weather changes.
@@ -117,8 +130,10 @@ It also has the following subfolders and files:
 * Game images from Google images (Free to use)
 
 ## Credits
-Adapted Code from [Learn JavaScript By Building Games How To Make A Game With Vanilla JS Frogger
-](https://youtu.be/GXvNEwu9cgM)
+Adapted Code from:
+* [Learn JavaScript By Building Games How To Make A Game With Vanilla JS Frogger](https://youtu.be/GXvNEwu9cgM)
+
+* [How TO - Image Comparison Slider](https://www.w3schools.com/howto/howto_js_image_comparison.asp)
 
 References:
 [Who Is Responsible For Climate Change? – Who Needs To Fix It?](https://www.youtube.com/watch?v=ipVxxxqwBQw&t=489s&ab_channel=Kurzgesagt%E2%80%93InaNutshell)
