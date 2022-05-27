@@ -114,7 +114,7 @@ It also has the following subfolders and files:
 
 * Run npm install
 
-Testing Plan
+Testing Plan:
 
 [Part 1](https://docs.google.com/spreadsheets/d/19MvylXmdLrxZEdnXJC3IdQSwNrDZqRF23z0M9LchMB8/edit?usp=sharing)
 
