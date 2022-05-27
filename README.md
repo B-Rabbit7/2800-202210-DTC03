@@ -120,8 +120,14 @@ It also has the following subfolders and files:
 Adapted Code from [Learn JavaScript By Building Games How To Make A Game With Vanilla JS Frogger
 ](https://youtu.be/GXvNEwu9cgM)
 
-Refrences:
+References:
 [Who Is Responsible For Climate Change? – Who Needs To Fix It?](https://www.youtube.com/watch?v=ipVxxxqwBQw&t=489s&ab_channel=Kurzgesagt%E2%80%93InaNutshell)
+
+[Paris Agreement](https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement#:~:text=The%20Paris%20Agreement%20is%20a,compared%20to%20pre%2Dindustrial%20levels)
+
+[Climate Action Fast Facts](https://www.un.org/en/climatechange/science/key-findings#physical-science)
+
+[The Effects of Climate Change](https://climate.nasa.gov/effects/)
 
 ## Contact Information
 * [Joseph Chan](https://www.linkedin.com/in/joseph-chan-113822203/)
